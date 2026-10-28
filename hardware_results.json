@@ -6,11 +6,8 @@
       "n_runs": 896,
       "accuracy_pct": 100.0,
       "latency_mean_ms": 75.03,
-      "latency_std_ms": 1.904,
-      "latency_p50_ms": 74.952,
-      "latency_p95_ms": 77.961,
-      "latency_p99_ms": 78.437,
-      "stft_mean_ms": 1.817,
+      "latency_p95_ms": 77.96,
+      "latency_p99_ms": 78.44,
       "expert_routing": {
         "baseline": 896
       }
@@ -20,12 +17,9 @@
       "dataset": "CWRU",
       "n_runs": 896,
       "accuracy_pct": 100.0,
-      "latency_mean_ms": 22.1,
-      "latency_std_ms": 1.2,
-      "latency_p50_ms": 22.0,
-      "latency_p95_ms": 24.5,
-      "latency_p99_ms": 25.8,
-      "stft_mean_ms": 1.804,
+      "latency_mean_ms": 75.34,
+      "latency_p95_ms": 77.76,
+      "latency_p99_ms": 78.38,
       "expert_routing": {
         "expert_A": 896
       }
@@ -35,12 +29,9 @@
       "dataset": "CWRU",
       "n_runs": 896,
       "accuracy_pct": 100.0,
-      "latency_mean_ms": 37.5,
-      "latency_std_ms": 1.4,
-      "latency_p50_ms": 37.2,
-      "latency_p95_ms": 40.1,
-      "latency_p99_ms": 41.3,
-      "stft_mean_ms": 1.806,
+      "latency_mean_ms": 74.9,
+      "latency_p95_ms": 77.47,
+      "latency_p99_ms": 77.91,
       "expert_routing": {
         "expert_B": 896
       }
@@ -49,13 +40,10 @@
       "mode": "expert_C",
       "dataset": "CWRU",
       "n_runs": 896,
-      "accuracy_pct": 61.83,
-      "latency_mean_ms": 50.0,
-      "latency_std_ms": 1.5,
-      "latency_p50_ms": 49.8,
-      "latency_p95_ms": 52.5,
-      "latency_p99_ms": 53.1,
-      "stft_mean_ms": 1.806,
+      "accuracy_pct": 79.4,
+      "latency_mean_ms": 74.62,
+      "latency_p95_ms": 77.07,
+      "latency_p99_ms": 77.43,
       "expert_routing": {
         "expert_C": 896
       }
@@ -64,29 +52,19 @@
       "mode": "moe",
       "dataset": "CWRU",
       "n_runs": 896,
-      "accuracy_pct": 99.22,
-      "latency_mean_ms": 27.8,
-      "latency_std_ms": 4.2,
-      "latency_p50_ms": 23.1,
-      "latency_p95_ms": 52.3,
-      "latency_p99_ms": 54.1,
-      "stft_mean_ms": 1.735,
-      "expert_routing": {
-        "expert_A": 686,
-        "expert_C": 210
-      }
+      "accuracy_pct": 98.9,
+      "latency_mean_ms": 75.94,
+      "latency_p95_ms": 78.79,
+      "latency_p99_ms": 79.3
     },
     {
       "mode": "baseline",
       "dataset": "XJTU",
       "n_runs": 3780,
-      "accuracy_pct": 49.39,
-      "latency_mean_ms": 74.947,
-      "latency_std_ms": 1.892,
-      "latency_p50_ms": 74.742,
-      "latency_p95_ms": 77.795,
-      "latency_p99_ms": 78.274,
-      "stft_mean_ms": 1.801,
+      "accuracy_pct": 49.4,
+      "latency_mean_ms": 74.95,
+      "latency_p95_ms": 77.8,
+      "latency_p99_ms": 78.27,
       "expert_routing": {
         "baseline": 3780
       }
@@ -95,13 +73,10 @@
       "mode": "expert_C",
       "dataset": "XJTU",
       "n_runs": 3780,
-      "accuracy_pct": 85.03,
-      "latency_mean_ms": 50.0,
-      "latency_std_ms": 1.5,
-      "latency_p50_ms": 49.8,
-      "latency_p95_ms": 52.5,
-      "latency_p99_ms": 53.1,
-      "stft_mean_ms": 1.804,
+      "accuracy_pct": 87.9,
+      "latency_mean_ms": 75.04,
+      "latency_p95_ms": 77.82,
+      "latency_p99_ms": 78.2,
       "expert_routing": {
         "expert_C": 3780
       }
@@ -110,13 +85,10 @@
       "mode": "moe",
       "dataset": "XJTU",
       "n_runs": 3780,
-      "accuracy_pct": 84.6,
-      "latency_mean_ms": 50.4,
-      "latency_std_ms": 1.8,
-      "latency_p50_ms": 50.1,
-      "latency_p95_ms": 53.0,
-      "latency_p99_ms": 54.2,
-      "stft_mean_ms": 1.823,
+      "accuracy_pct": 87.9,
+      "latency_mean_ms": 75.91,
+      "latency_p95_ms": 79.59,
+      "latency_p99_ms": 81.81,
       "expert_routing": {
         "expert_C": 3763,
         "expert_A": 8,
@@ -125,47 +97,145 @@
     }
   ],
   "memory": [
-    {"mode": "baseline",  "dataset": "CWRU", "ram_mb": 459.5},
-    {"mode": "expert_A",  "dataset": "CWRU", "ram_mb": 263.1},
-    {"mode": "expert_B",  "dataset": "CWRU", "ram_mb": 311.4},
-    {"mode": "expert_C",  "dataset": "CWRU", "ram_mb": 311.4},
-    {"mode": "moe",       "dataset": "CWRU", "ram_mb": 320.6},
-    {"mode": "baseline",  "dataset": "XJTU", "ram_mb": 463.4},
-    {"mode": "expert_A",  "dataset": "XJTU", "ram_mb": 263.1},
-    {"mode": "expert_B",  "dataset": "XJTU", "ram_mb": 311.4},
-    {"mode": "expert_C",  "dataset": "XJTU", "ram_mb": 311.4},
-    {"mode": "moe",       "dataset": "XJTU", "ram_mb": 320.6}
+    {
+      "mode": "baseline",
+      "dataset": "CWRU",
+      "ram_mb": 459.5
+    },
+    {
+      "mode": "expert_A",
+      "dataset": "CWRU",
+      "ram_mb": 459.9
+    },
+    {
+      "mode": "expert_B",
+      "dataset": "CWRU",
+      "ram_mb": 460.2
+    },
+    {
+      "mode": "expert_C",
+      "dataset": "CWRU",
+      "ram_mb": 460.6
+    },
+    {
+      "mode": "moe",
+      "dataset": "CWRU",
+      "ram_mb": 463.4
+    },
+    {
+      "mode": "moe",
+      "dataset": "XJTU",
+      "ram_mb": 463.4
+    }
   ],
   "cpu": [
-    {"mode": "baseline", "dataset": "CWRU", "cpu_pct": 88.0},
-    {"mode": "expert_A", "dataset": "CWRU", "cpu_pct": 35.2},
-    {"mode": "expert_B", "dataset": "CWRU", "cpu_pct": 56.8},
-    {"mode": "expert_C", "dataset": "CWRU", "cpu_pct": 72.4},
-    {"mode": "moe",      "dataset": "CWRU", "cpu_pct": 42.1},
-    {"mode": "baseline", "dataset": "XJTU", "cpu_pct": 89.1},
-    {"mode": "expert_A", "dataset": "XJTU", "cpu_pct": 35.2},
-    {"mode": "expert_B", "dataset": "XJTU", "cpu_pct": 56.8},
-    {"mode": "expert_C", "dataset": "XJTU", "cpu_pct": 72.4},
-    {"mode": "moe",      "dataset": "XJTU", "cpu_pct": 72.4}
+    {
+      "mode": "baseline",
+      "dataset": "CWRU",
+      "cpu_pct": 88.0
+    },
+    {
+      "mode": "expert_A",
+      "dataset": "CWRU",
+      "cpu_pct": 88.8
+    },
+    {
+      "mode": "expert_B",
+      "dataset": "CWRU",
+      "cpu_pct": 89.3
+    },
+    {
+      "mode": "expert_C",
+      "dataset": "CWRU",
+      "cpu_pct": 89.1
+    },
+    {
+      "mode": "moe",
+      "dataset": "CWRU",
+      "cpu_pct": 88.7
+    },
+    {
+      "mode": "baseline",
+      "dataset": "XJTU",
+      "cpu_pct": 89.1
+    },
+    {
+      "mode": "moe",
+      "dataset": "XJTU",
+      "cpu_pct": 89.1
+    }
   ],
   "throughput": [
-    {"mode": "baseline", "dataset": "CWRU", "inferences_per_sec": 13.39, "ms_per_sample": 74.699},
-    {"mode": "expert_A", "dataset": "CWRU", "inferences_per_sec": 45.25, "ms_per_sample": 22.099},
-    {"mode": "expert_B", "dataset": "CWRU", "inferences_per_sec": 26.67, "ms_per_sample": 37.503},
-    {"mode": "expert_C", "dataset": "CWRU", "inferences_per_sec": 20.00, "ms_per_sample": 50.003},
-    {"mode": "moe",      "dataset": "CWRU", "inferences_per_sec": 35.97, "ms_per_sample": 27.800},
-    {"mode": "baseline", "dataset": "XJTU", "inferences_per_sec": 13.36, "ms_per_sample": 74.823},
-    {"mode": "expert_A", "dataset": "XJTU", "inferences_per_sec": 45.25, "ms_per_sample": 22.099},
-    {"mode": "expert_B", "dataset": "XJTU", "inferences_per_sec": 26.67, "ms_per_sample": 37.503},
-    {"mode": "expert_C", "dataset": "XJTU", "inferences_per_sec": 20.00, "ms_per_sample": 50.003},
-    {"mode": "moe",      "dataset": "XJTU", "inferences_per_sec": 19.84, "ms_per_sample": 50.403}
+    {
+      "mode": "baseline",
+      "dataset": "CWRU",
+      "inferences_per_sec": 13.39,
+      "ms_per_sample": 74.7
+    },
+    {
+      "mode": "expert_A",
+      "dataset": "CWRU",
+      "inferences_per_sec": 13.3,
+      "ms_per_sample": 75.21
+    },
+    {
+      "mode": "expert_B",
+      "dataset": "CWRU",
+      "inferences_per_sec": 13.29,
+      "ms_per_sample": 75.25
+    },
+    {
+      "mode": "expert_C",
+      "dataset": "CWRU",
+      "inferences_per_sec": 13.31,
+      "ms_per_sample": 75.14
+    },
+    {
+      "mode": "moe",
+      "dataset": "CWRU",
+      "inferences_per_sec": 13.11,
+      "ms_per_sample": 76.3
+    },
+    {
+      "mode": "baseline",
+      "dataset": "XJTU",
+      "inferences_per_sec": 13.36,
+      "ms_per_sample": 74.82
+    },
+    {
+      "mode": "expert_C",
+      "dataset": "XJTU",
+      "inferences_per_sec": 13.29,
+      "ms_per_sample": 75.23
+    },
+    {
+      "mode": "moe",
+      "dataset": "XJTU",
+      "inferences_per_sec": 13.28,
+      "ms_per_sample": 75.28
+    }
   ],
   "model_sizes": [
-    {"model": "baseline",  "size_mb": 16.279},
-    {"model": "expert_A",  "size_mb": 2.033},
-    {"model": "expert_B",  "size_mb": 4.066},
-    {"model": "expert_C",  "size_mb": 4.066},
-    {"model": "gate_mlp",  "size_mb": 0.021}
+    {
+      "model": "baseline",
+      "size_mb": 16.28
+    },
+    {
+      "model": "expert_A",
+      "size_mb": 16.28
+    },
+    {
+      "model": "expert_B",
+      "size_mb": 16.28
+    },
+    {
+      "model": "expert_C",
+      "size_mb": 16.28
+    },
+    {
+      "model": "gate_mlp",
+      "size_mb": 0.021
+    }
   ],
   "energy": {
     "idle": {
@@ -178,97 +248,65 @@
         "mode": "baseline",
         "dataset": "CWRU",
         "n_inferences": 200,
-        "ms_per_inference": 76.161,
-        "mean_voltage_v": 4.8161,
-        "mean_current_ma": 825.234,
-        "mean_power_w": 3.978611,
-        "energy_per_inf_mj": 303.014315,
-        "active_power_w": 2.263537,
-        "active_energy_mj": 172.393241
+        "ms_per_inference": 76.16,
+        "active_power_w": 2.264,
+        "active_energy_mj": 172.4
       },
       {
         "mode": "expert_A",
         "dataset": "CWRU",
         "n_inferences": 200,
-        "ms_per_inference": 22.1,
-        "mean_voltage_v": 4.8190,
-        "mean_current_ma": 758.200,
-        "mean_power_w": 3.633,
-        "energy_per_inf_mj": 80.289,
-        "active_power_w": 1.918,
-        "active_energy_mj": 42.388
+        "ms_per_inference": 76.51,
+        "active_power_w": 2.236,
+        "active_energy_mj": 171.0
       },
       {
         "mode": "expert_B",
         "dataset": "CWRU",
         "n_inferences": 200,
-        "ms_per_inference": 37.5,
-        "mean_voltage_v": 4.8202,
-        "mean_current_ma": 778.400,
-        "mean_power_w": 3.754,
-        "energy_per_inf_mj": 140.775,
-        "active_power_w": 2.039,
-        "active_energy_mj": 76.463
+        "ms_per_inference": 76.31,
+        "active_power_w": 2.114,
+        "active_energy_mj": 161.3
       },
       {
         "mode": "expert_C",
         "dataset": "CWRU",
         "n_inferences": 200,
-        "ms_per_inference": 50.0,
-        "mean_voltage_v": 4.8234,
-        "mean_current_ma": 791.961,
-        "mean_power_w": 3.798,
-        "energy_per_inf_mj": 189.888,
+        "ms_per_inference": 76.3,
         "active_power_w": 2.083,
-        "active_energy_mj": 104.138
+        "active_energy_mj": 158.9
       },
       {
         "mode": "moe",
         "dataset": "CWRU",
         "n_inferences": 200,
-        "ms_per_inference": 27.8,
-        "mean_voltage_v": 4.8140,
-        "mean_current_ma": 766.300,
-        "mean_power_w": 3.683,
-        "energy_per_inf_mj": 102.385,
-        "active_power_w": 1.968,
-        "active_energy_mj": 54.710
+        "ms_per_inference": 76.74,
+        "active_power_w": 2.277,
+        "active_energy_mj": 174.8
       },
       {
         "mode": "baseline",
         "dataset": "XJTU",
         "n_inferences": 200,
-        "ms_per_inference": 75.596,
-        "mean_voltage_v": 4.8262,
-        "mean_current_ma": 790.149,
-        "mean_power_w": 3.786839,
-        "energy_per_inf_mj": 286.271054,
-        "active_power_w": 2.071765,
-        "active_energy_mj": 156.617147
+        "ms_per_inference": 75.6,
+        "active_power_w": 2.072,
+        "active_energy_mj": 156.6
       },
       {
         "mode": "expert_C",
         "dataset": "XJTU",
         "n_inferences": 200,
-        "ms_per_inference": 50.0,
-        "mean_voltage_v": 4.8189,
-        "mean_current_ma": 791.961,
-        "mean_power_w": 3.798,
-        "energy_per_inf_mj": 189.888,
-        "active_power_w": 2.083,
-        "active_energy_mj": 104.138
+        "ms_per_inference": 75.69,
+        "active_power_w": 2.161,
+        "active_energy_mj": 163.6
       },
       {
         "mode": "moe",
         "dataset": "XJTU",
         "n_inferences": 200,
-        "ms_per_inference": 50.4,
-        "mean_voltage_v": 4.8247,
-        "mean_current_ma": 791.961,
-        "mean_power_w": 3.798,
-        "energy_per_inf_mj": 191.378,
-        "active_power_w": 2.083,
-        "active_energy_mj": 104.983
+        "ms_per_inference": 75.68,
+        "active_power_w": 2.091,
+        "active_energy_mj": 158.3
       }
     ]
   }
